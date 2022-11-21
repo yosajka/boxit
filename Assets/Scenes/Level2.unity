@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f0a4a4b410353e64397a775f5e069671, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -149,6 +149,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 227282972}
   - {fileID: 1828837013}
@@ -602,6 +603,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1158686792}
   - {fileID: 2064714440}
@@ -3549,6 +3551,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 573096933}
   - {fileID: 739477154}
@@ -7295,6 +7298,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!224 &1375333769 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8750563125258598561, guid: 5842a6278adf40048897ea2793031e1f, type: 3}
+  m_PrefabInstance: {fileID: 2100739295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1387129870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8163,6 +8171,7 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 7.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -8474,10 +8483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192ed89a2a652874dbf93db92398f2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winningSound: {fileID: 0}
   ballRolling: {fileID: 1140757455}
-  IngameCanvas: {fileID: 0}
-  WinCanvas: {fileID: 0}
+  IngameCanvas: {fileID: 1864784047}
+  WinCanvas: {fileID: 2100739296}
   isOnWhiteBox: 0
 --- !u!135 &1594305772
 SphereCollider:
@@ -10720,6 +10728,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4, y: 12, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -10740,8 +10749,8 @@ MonoBehaviour:
   finishBox: {fileID: 1619235101}
   winCanvas: {fileID: 2100739296}
   ingameCanvas: {fileID: 1864784047}
-  LevelScrollView: {fileID: 0}
-  LevelTemplate: {fileID: 0}
+  LevelScrollView: {fileID: 1375333769}
+  LevelTemplate: {fileID: 4532387104522123866, guid: 15111ff809b648447add9bf4d02cc9f4, type: 3}
 --- !u!1001 &1864784046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11943,6 +11952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -11975,6 +11985,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -12439,6 +12450,7 @@ Transform:
   m_LocalRotation: {x: 0.70710576, y: 0.0012341102, z: 0.00000006624032, w: 0.7071068}
   m_LocalPosition: {x: -0.030596018, y: 18.529713, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

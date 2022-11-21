@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 7599bcf99b3ac804b9187f651917dfd7, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2024,10 +2024,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192ed89a2a652874dbf93db92398f2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winningSound: {fileID: 0}
   ballRolling: {fileID: 1108741549}
-  IngameCanvas: {fileID: 0}
-  WinCanvas: {fileID: 0}
+  IngameCanvas: {fileID: 387126905}
+  WinCanvas: {fileID: 6814261853654665911}
   isOnWhiteBox: 0
 --- !u!114 &646014681
 MonoBehaviour:
@@ -2541,7 +2540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 967318237}
-  distance: 14
+  distance: 20
   xSpeed: 20
   ySpeed: 20
   yMinLimit: -90
@@ -5763,6 +5762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1749156359948420536, guid: 1cc49f15626ca7c46a293c91b1fffce2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1749156359948420543, guid: 1cc49f15626ca7c46a293c91b1fffce2, type: 3}
       propertyPath: winCanvas
       value: 
@@ -6049,6 +6052,10 @@ PrefabInstance:
     - target: {fileID: 8750563124130756093, guid: 5842a6278adf40048897ea2793031e1f, type: 3}
       propertyPath: m_Padding.m_Left
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750563124130756095, guid: 5842a6278adf40048897ea2793031e1f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5842a6278adf40048897ea2793031e1f, type: 3}

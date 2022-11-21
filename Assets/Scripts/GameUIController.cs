@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameUIController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public GameObject inGameCanvas;
     public GameObject winCanvas;
     GameObject g;
@@ -19,7 +19,7 @@ public class GameUIController : MonoBehaviour
         winCanvas.SetActive(false);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -36,12 +36,14 @@ public class GameUIController : MonoBehaviour
                 levelBtn = g.transform.GetChild(2).GetComponent<Button>();
                 levelBtn.AddEventListener(i, OnLevelBtnClicked);
             }
+
+            //GameStateManager.Instance.winRound = false;
         }
     }
 
     void OnLevelBtnClicked(int levelIndex)
     {
-        Debug.Log(levelIndex + "....................");
+        
         SceneManager.LoadScene("Level"+((levelIndex+1).ToString()));
     }
 }

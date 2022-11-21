@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,7 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform LevelScrollView;
     [SerializeField] GameObject LevelTemplate;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         ballStartPosition = ball.transform.position;
@@ -42,18 +39,6 @@ public class GameManager : MonoBehaviour
 
     public void Replay()
     {
-        //ball.GetComponent<Rigidbody>().isKinematic = true;
-
-        // ball.gameObject.SetActive(true);
-        // //ball.transform.position = ballStartPosition;
-        // ball.GetComponent<Rigidbody>().position = ballStartPosition;
-        // for (int i = 0; i < listBox.Length; i++)
-        // {
-        //     listBox[i].transform.position = listBoxStartPosition[i];
-        //     //listBox[i].GetComponent<Rigidbody>().position = listBoxStartPosition[i];
-        // }
-
-        // ball.GetComponent<Rigidbody>().isKinematic = false;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }

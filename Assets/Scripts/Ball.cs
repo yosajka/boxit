@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour, IClickable
 {
-    public AudioSource winningSound;
+    private AudioSource winningSound;
     public AudioSource ballRolling;
     public GameObject IngameCanvas;
     public GameObject WinCanvas;

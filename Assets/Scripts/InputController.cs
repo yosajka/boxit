@@ -22,7 +22,7 @@ public class InputController : MonoBehaviour
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.Log(_layer);
+            //Debug.Log(_layer);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, _layer))
             {
                 IClickable clickable = hit.transform.GetComponent<IClickable>();
